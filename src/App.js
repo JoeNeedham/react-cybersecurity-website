@@ -1,7 +1,6 @@
 import GlobalStyle from './globalStyles'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Test from './test';
-
+import Navbar from './components/Navbar/Navbar';
 //Pages
 import Home from './pages/Home';
 import SignUp from './pages/SignupPage';
@@ -10,6 +9,7 @@ import Pricing from './pages/PricingPage';
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Router>
         <GlobalStyle />
           <Routes>
